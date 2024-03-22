@@ -26,7 +26,7 @@ public:
 	void function2() {
 		int totalSeconds = hour * 3600 + minute * 60 + second;
 		totalSeconds += 100 * 60;
-		double hour1 = totalSeconds / 3600;
+		double hour1 = (totalSeconds / 3600)%24;
 		double minute1 = (totalSeconds % 3600) / 60;
 		double second1 = totalSeconds % 60;
 
